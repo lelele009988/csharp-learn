@@ -115,3 +115,31 @@ dotnet --version                       # 看 SDK 版本
 - 右侧「Git 更改」窗口可直接提交代码
 
 > 备选方案：装一个 **VS Code**（约 100 MB，比 VS 轻得多），配合 C# 扩展就能有语法高亮和智能提示，对学习阶段完全够用。
+
+---
+
+## 七、版本控制（Git）
+
+本目录已是 git 仓库，远程地址：`git@github.com:lelele009988/csharp-learn.git`
+
+### 日常四步
+
+``powershell
+cd C:\Users\admin\Documents\deepseek-harness\default-workspace\csharp-learn
+
+git status              # 我改了什么
+git add -A              # 加入待提交
+git commit -m "说明"    # 存一个档
+git push                # 推到 GitHub
+``
+
+### 在 VS 2022 里
+
+底部状态栏显示 `main` → 右侧「Git 更改」→ 写说明 → 「全部提交」→ 右上角「推送」。
+
+### 提交流程示意图
+
+```
+改代码  →  git status  →  git add  →  git commit  →  git push
+（工作区）   （看差异）     （暂存）     （本地存档）    （云端备份）
+```
